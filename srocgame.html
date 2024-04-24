@@ -1,0 +1,533 @@
+<html>
+    <head>
+        <title>TEKA TEKI SILANG </title>
+        <script>
+            function checkAnswer() {
+                let answer = "'" + document.querySelector("input").value + "'";
+                for (let node of document.querySelectorAll("td")) {
+                    if (node.className.indexOf(answer) >= 0) {
+                        node.style = "color: white;";
+                    }
+                }
+                Document.querySelector("input").value = "";
+            }
+        </script>
+
+
+        <style>
+            *, html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            scroll-behavior: smooth;
+            }
+
+            table {
+            border-collapse: collapse;
+            }
+
+            td {
+                position: relative;
+                border: 3px solid black;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                color: #2C365A;
+                background-color: #2C365A;
+                font-size: 30px;
+            }
+
+            td:empty {
+                background: black;
+            }
+
+            sup {
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 13px;
+            }
+
+            .f {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 0;
+                margin-top: 70px;
+                margin-bottom: 50px;
+            }
+
+            .formField {
+            margin: 10px;
+            position: relative;
+            margin-top: 30px;
+            }
+
+            .formField input {
+            padding: 10px 15px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            background-color: #2C365A;
+            color: #ea8602;
+            font-size: 22px;
+            font-weight: 550;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 0 0 5px transparent;
+            }
+
+            .formField input:hover,
+            .formField input:focus {
+            box-shadow: 0 0 0 2px #2C365A;
+            }
+
+            .formField span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 8px 15px;
+            color: #333;
+            font-size: 22px;
+            font-weight: 600;
+            text-shadow: -1px -1px 0 #f1f1f1, 1px -1px 0 #f1f1f1, -1px 1px 0 #f1f1f1,
+            1px 1px 0 #f1f1f1;
+            transition: 0.3s ease-in-out;
+            pointer-events: none;
+            }
+
+            .formField input:focus + span,
+            .formField input:valid + span {
+            transform: translateY(-32px) translateX(-5px) scale(0.95);
+            transition: 0.3s ease-in-out;
+            }
+
+            h1 {
+            text-align: center;
+            color: #ea8602; 
+            font-size: 50px; 
+            text-shadow: 2px 2px 4px wheat; 
+            }
+
+            h2 {
+            margin-left: 40px;
+            margin-bottom: 10px;
+            font-size: 36px;
+            }
+
+            p{
+            margin-left: 40px;
+            font-size: 25px;
+            text-align: justify;
+            margin-right: 40px;
+            line-height: 60px;
+            margin-bottom: 5px;
+            text-shadow: 5px 5px 20px #fff;
+            }
+
+            .z{
+            margin-bottom: 10px;
+            margin-top: 40px;
+            }
+
+        .cover {
+            width: auto;
+            height: auto; 
+            background-image: url(assets/cover\ tts\ 1.png); 
+            background-size: cover;
+            background-position: center; 
+        }
+
+        .v {
+            background: white;
+            color: #ea8602;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ea8602;
+    min-width: 250px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 30px;
+        }
+  
+  .btn:hover {
+    opacity: .95;
+  }
+  
+  .btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+        </style>
+    </head>
+    <div class="v">Social Relationship Of Children</div>
+    <body>
+    <div class="cover">
+        <h1>Teka Teki Silang</h1>
+   
+            <div class="f">
+                <table>
+                    <tr>
+                        <div class="q">
+                            <td></td>
+                            <td class="'KELUARGA' 'Keluarga' 'keluarga' "><sup>6</sup>K</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'KEKERASAN' 'Kekerasan' 'kekerasan'"><sup>9</sup>K</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'"><sup>1</sup>M</td>
+                            <td class="'KELUARGA' 'Keluarga' 'keluarga' 'MELAPORKAN'">E</td>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'">L</td>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'">A</td>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'">P</td>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'">O</td>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'">R</td>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'">K</td>
+                            <td class="'MELAPORKAN' 'melaporkan' 'Melaporkan'">A</td>
+                            <td class="'MELAPORKAN' 'NAPZA' 'Napza' 'napza'"><sup>7</sup>N</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'"><sup>8</sup>E</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'KEKERASAN' 'Kekerasan' 'kekerasan'">E</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="'KELUARGA' 'Keluarga' 'keluarga' 'EKSPLOITASI'">L</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'NAPZA' 'Napza' 'napza'">A</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">K</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'KEKERASAN' 'Kekerasan' 'kekerasan'">K</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="'Guru' 'GURU' 'guru'"><sup>4</sup>G</td>
+                            <td class="'Guru' 'GURU' 'guru' 'KELUARGA' 'Keluarga' 'keluarga'">U</td>
+                            <td class="'Guru' 'GURU' 'guru'">R</td>
+                            <td class="'Guru' 'GURU' 'guru'">U</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'NAPZA' 'Napza' 'napza'">P</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">S</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'KEKERASAN' 'Kekerasan' 'kekerasan'">E</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="'KELUARGA' 'Keluarga' 'keluarga'">A</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'"><sup>10</sup>D</td>
+                            <td></td>
+                            <td class="'NAPZA' 'Napza' 'napza'">Z</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">P</td>
+                            <td></td>
+                            <td></td>
+                            <td class=" 'KEKERASAN' 'Kekerasan' 'kekerasan'">R</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="'KELUARGA' 'Keluarga' 'keluarga'">R</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS'"><sup>2</sup>D</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS' 'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">I</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS'">S</td>
+                            <td class="'NAPZA' 'Napza' 'napza' 'Disabilitas' 'disabilitas' 'DISABILITAS'">A</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS'">B</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS'">I</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS' 'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">L</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS'">I</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS'">T</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS' 'KEKERASAN' 'Kekerasan' 'kekerasan'">A</td>
+                            <td class="'Disabilitas' 'disabilitas' 'DISABILITAS'">S</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="'KELUARGA' 'Keluarga' 'keluarga' ">G</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">S</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">O</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'KEKERASAN' 'Kekerasan' 'kekerasan'">S</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="'KELUARGA' 'Keluarga' 'keluarga' ">A</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">K</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">I</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'KEKERASAN' 'Kekerasan' 'kekerasan'">A</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">R</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">T</td>
+                            <td></td>
+                            <td></td>
+                            <td class="'KEKERASAN' 'Kekerasan' 'kekerasan'">N</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">I</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">A</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">M</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">S</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'"><sup>3</sup>P</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'">E</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'">N</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'">D</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'">I</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'">D</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan' 'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">I</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'">K</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan' ">A</td>
+                            <td class="'pendidikan' 'PENDIDIKAN' 'Pendidikan'">N</td>
+                            <td></td>
+                            <td class="'EKSPLOITASI' 'Eksploitasi' 'eksploitasi'">I</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">A</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">S</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'"><sup>5</sup>P</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">E</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">R</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">L</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan' 'DISKRIMINASI' 'Diskriminasi' 'diskriminasi'">I</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">N</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">D</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">U</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">N</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">G</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">A</td>
+                            <td class="'Perlindungan' 'PERLINDUNGAN' 'perlindungan'">N</td>
+                            <td></td>
+                            <td></td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        <h2>Mendatar</h2>
+        <ol>
+            <p>1. Apa yang harus dilakukan jika melihat pembullyan? </p>
+            <p>2. Apa istilah untuk kondisi di mana seseorang memiliki keterbatasan fisik atau mental?</p>
+            <p>3. Apa yang harus diberikan kepada setiap anak untuk mengembangkan potensi mereka?</p>
+            <p>4. Siapa orangtua di sekolah?</p>
+            <p>5. Apa yang bisa membuat anak merasa aman dan nyaman?</p>
+        </ol>
+        <h2 class="z">Menurun</h2>
+        <ol>
+            <p>6. Selain peran masyarakat dan sekolah, peran terpenting dalam mencegah kekerasan pada anak adalah dari?</p>
+            <p>7. Istilah lain dari narkoba?</p>
+            <p>8. Memanfaatkan anak secara tidak pantas untuk kepentingan pribadi seperti bekerja terlalu keras disebut?</p>
+            <p>9. Penganiayaan terhadap anak yang menimbulkan luka-luka fisik disebut?</p>
+            <p>10. Perlakuan tidak adil terhadap anak berdasarkan ras, agama, atau jenis kelamin disebut?</p>
+        </ol>
+
+        <form class="formField" onsubmit="javascript:checkAnswer()" action="javascript:null">
+            <input type="text" required="" />
+            <span>Jawaban</span>
+        </form>
+        <div style="text-align: right;">
+            <a href="index.html"><button class="btn"><i class="animation"></i>Menu Utama<i class="animation"></i></button></a>
+        </div>
+    </div>
+    </body>
+</html>

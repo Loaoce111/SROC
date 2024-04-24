@@ -1,0 +1,334 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+  background: #F9E897;
+  background-image: url(assets/backround.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  background: #2C365A;
+}
+
+
+.w {
+    background: #000000;
+}
+
+header {
+    background: #2C365A;
+    color: antiquewhite;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo-title {
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+}
+
+.ik {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.k {
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.k2 {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.apa1 {
+    background-color: #F9E897;
+    color: antiquewhite;
+    color: #2C365A;
+    margin-bottom: 50px;
+    margin-top: 300px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: 60px;
+  align-items: center;
+  grid-gap: 30px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-left: 60px;
+}
+
+.konten {
+  flex-wrap: wrap;
+}
+
+.s {
+  color: #2C365A;
+  height: 3px;
+}
+
+img{
+  object-fit: cover;
+}
+
+.grid > article{
+  box-shadow: 5px 5px 5px 0px black;
+  border-radius: 30px;
+  text-align: center;
+  background: #F9E897;
+  width: 300px;
+  color: #000000;
+}
+
+.grid > article img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+@media (max-width:1000px){
+  .grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:500px){
+  .grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media screen and (max-witdh: 476px){ *
+  .grid {
+    width: 95%;
+  
+  }
+}
+
+.k3 {
+    margin-right: 15px;
+    margin-left: 30px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ea8602;
+    min-width: 250px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 30px;
+  }
+  
+  .btn:hover {
+    opacity: .95;
+  }
+  
+  .btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+  .f {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+    background-color: #ea8602;
+  }
+  .q {
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn1 {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ea8602;
+    min-width: 150px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+  .btn1:hover {
+    opacity: .95;
+  }
+  
+  .btn1 .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+
+  .notification {
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    width: 18rem;
+    height: 8rem;
+    background: #29292c;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+    --color: #32a6ff
+  }
+  
+  .notification:before {
+    position: absolute;
+    content: "";
+    inset: 0.0625rem;
+    border-radius: 0.9375rem;
+    background: #18181b;
+    z-index: 2
+  }
+  
+  .notification:after {
+    position: absolute;
+    content: "";
+    width: 0.25rem;
+    inset: 0.65rem auto 0.65rem 0.5rem;
+    border-radius: 0.125rem;
+    background: var(--gradient);
+    transition: transform 300ms ease;
+    z-index: 4;
+  }
+  
+  .notification:hover:after {
+    transform: translateX(0.15rem)
+  }
+  
+  .notititle {
+    color: var(--color);
+    padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+  }
+  
+  .notification:hover .notititle {
+    transform: translateX(0.15rem)
+  }
+  
+  .notibody {
+    color: #99999d;
+    padding: 0 1.25rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+  }
+  
+  .notification:hover .notibody {
+    transform: translateX(0.25rem)
+  }
+  
+  .notiglow,
+  .notiborderglow {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle closest-side at center, white, transparent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  
+  .notiglow {
+    z-index: 3;
+  }
+  
+  .notiborderglow {
+    z-index: 1;
+  }
+  
+  .notification:hover .notiglow {
+    opacity: 0.1
+  }
+  
+  .notification:hover .notiborderglow {
+    opacity: 0.1
+  }
+  
+  .note {
+    color: var(--color);
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.9rem;
+    width: 75%;
+  }
+
+  .v {
+    background-color: #2C365A;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    padding: 13px;
+  }
+
+  
+  
+  

@@ -1,0 +1,165 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+.w {
+    background: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+    background: #2C365A;
+    color: antiquewhite;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ik {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+.btn1 {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ea8602;
+    min-width: 150px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+}
+  
+  .btn1:hover {
+    opacity: .95;
+  }
+  
+  .btn1 .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+
+  .biru {
+    background-color: #004369;
+    background-image: linear-gradient(180deg, #004369 50%, #4d74b1 100%);  
+    padding: 50px;
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    }  
+    
+    .biru-2 {
+    background-color: #4d74b1;
+    background-image: linear-gradient(180deg, #4d74b1 32%, #004369 90%);
+    padding: 50px;
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    }
+    
+    .biru-3 {
+    background-color: #f4a938;
+    background-image: linear-gradient(0deg, #f4a938 0%, #004369 100%);
+    padding: 50px;
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    }
+    
+    .biru-4 {
+    background-color: #f4a938;
+    background-image: linear-gradient(180deg, #f4a938 0%, #df4c4a 100%);
+    padding: 50px;
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    }
+    
+    .biru-5 {
+    background-color: #df4c4a;
+    background-image: linear-gradient(180deg, #df4c4a 0%, #004369 100%);
+    padding: 50px;
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    }
+    
+    .biru-6 {
+    background-color: #004369;
+    background-image: linear-gradient(180deg, #004369 0%, #087568 100%);
+    padding: 50px;
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    }
+
+    .a {
+    background: #087568;
+    }
+    .b {
+    background: #087568;
+    }
+    
+    
+.btn2 {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ea8602;
+  min-width: 150px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 10px 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn2:hover {
+  opacity: .95;
+}
+
+.btn2 .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+  
